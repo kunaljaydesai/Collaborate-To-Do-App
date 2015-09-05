@@ -14,7 +14,7 @@ router.get('/', function(req, res, next){
 
 router.post('/', function(req, res, next){
 	var username = req.body.username;
-	var status = 'In Progress'
+	var status = 0
 	var listName = req.body.listName
 	var timestamp = Date.now() //milliseconds since epoch
 	var description = req.body.description;

@@ -9,6 +9,9 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var add = require('./routes/add');
 var update = require('./routes/update');
+var list = require('./routes/list');
+var register = require('./routes/register');
+var login = require('./routes/login');
 
 var app = express();
 
@@ -28,6 +31,9 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/add', add);
 app.use('/update', update);
+app.use('/list', list);
+app.use('/register', register);
+app.use('/login', login);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
